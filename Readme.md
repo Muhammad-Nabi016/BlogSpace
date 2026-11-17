@@ -109,7 +109,7 @@ BlogSpace/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Muhammad-Nabi016/BlogSpace
+git clone https://github.com/Muhammad-Nabi016/BlogSpace.git
 cd BlogSpace
 ```
 
