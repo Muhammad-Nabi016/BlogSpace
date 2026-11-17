@@ -1,9 +1,12 @@
-
 const express = require("express");
+const path = require("path");
 
 const { app, connectDB } = require("./backend/server");
 
 const vercelApp = express();
+
+// Serve frontend static files
+vercelApp.use(express.static(path.join(__dirname, "public")));
 
 // Connect MongoDB before API requests
 vercelApp.use("/api", async (req, res, next) => {
